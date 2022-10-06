@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок</title>
+    <style>
+
+        body {
+            height: 1800px;
+        }
+
+        h1, h2 {
+            color: red;
+        }
+
+        .gc {
+            margin: 30px;
+            display: grid;
+            grid-template-columns: auto auto;
+            border-style: solid;
+        }
+
+        .gc div {
+            padding: 5px;
+        }
+
+        .gi {
+            grid-column: 1/3;
+            border-bottom-style: dotted;
+        }
+
+        p {
+            position: relative;
+            text-align: center;
+        }
+
+        .btext {
+            background-color: lightseagreen;
+            color: gold;
+        }
+
+        .sun {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: yellow;
+            border-radius: 50%;
+            font-size: 40px;
+        }
+
+        .fc {
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: aqua;
+            align-items: baseline;
+            /*align-content: center;*/
+        }
+
+        .fi1 {
+            padding: 40px;
+            margin: 10px;
+            background-color: blue;
+            align-self: end;
+        }
+
+        .fi2 {
+            padding: 40px;
+            margin: 10px;
+            background-color: blue;
+        }
+
+        .fi3 {
+            padding: 40px;
+            margin: 10px;
+            background-color: blue;
+            align-self: center;
+        }
+
+        .fi4 {
+            padding: 40px;
+            margin: 10px;
+            background-color: blue;
+            align-self: center;
+        }
+
+        .fi5 {
+            padding: 40px;
+            margin: 10px;
+            background-color: blue;
+            align-self: end;
+        }
+
+        .fi6 {
+            padding: 40px;
+            margin: 10px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Большой текст</h1>
+    <h2>Чуть менее большой текст</h2>
+    <div class="gc">
+        <div class="gi"><p>Просто текст</p><p>Еще текст</p><p>И еще</p></div>
+        <div style="background-color: gray">Списочек<br>------></div>
+        <div>
+            <ul>
+                <li><b>Жирный пунктик</b></li>
+                <li><i>Косой пунктик</i></li>
+                <li>
+                    Пунктик семьянин
+                    <ol>
+                        <li>Подпунктик</li>
+                        <li>Подпунктик</li>
+                        <li>Подпунктик</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+
+        <div>Стеснительный текст<br>------></div>
+        <div style="background-color: gray">
+            <details>
+                <summary>Видимая часть</summary>
+                <p>Скрытая часть</p>
+            </details>
+        </div>
+
+
+        <div style="background-color: gray">Форма<br>------></div>
+        <div>
+            <form>
+                Дыня лучше арбуза?
+                <select>
+                    <option disabled>Нет</option>
+                    <option>Да</option>
+                    <option>Разумеется</option>
+                </select>
+            </form>
+        </div>
+
+
+        <div>Гиперссылка<br>------></div>
+        <div style="background-color: gray"><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Не тыкай!</a></div>
+
+    </div>
+    <p class="btext">Промотай вниз, тебе не убежать от солнца</p>
+    <div class="fc">
+        <div class="fi1">1</div>
+        <div class="fi2">2</div>
+        <div class="fi3">3</div>
+        <div class="fi4">4</div>
+        <div class="fi5">5</div>
+        <div class="fi6">6</div>
+    </div>
+    <div class="sun">Солнце</div>
+</body>
