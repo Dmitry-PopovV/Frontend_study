@@ -1,0 +1,16 @@
+.fc {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 97.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    position:absolute;
+    top: 0;
+    left: 0;
+    /*z-index: 1;*/
+}

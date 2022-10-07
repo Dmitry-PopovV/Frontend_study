@@ -1,0 +1,117 @@
+body {
+    height: 1800px;
+}
+
+h1, h2 {
+    color: red;
+}
+
+.gc {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    border-style: solid;
+}
+
+    .gc div {
+        padding: 5px;
+    }
+
+.gi {
+    grid-column: 1/3;
+    border-bottom-style: dotted;
+}
+
+p {
+    position: relative;
+    text-align: center;
+}
+
+.btext {
+    background-color: lightseagreen;
+    color: gold;
+}
+
+.sun {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+.fc {
+    width: 640px;px;
+    height: 420px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: aqua;
+    align-items: baseline;
+    overflow-y: scroll;
+}
+
+.fi1 {
+    padding: 130px;
+    margin: 10px;
+    background-color: blue;
+}
+
+.fi2 {
+    padding: 130px;
+    margin: 10px;
+    background-color: blue;
+}
+
+.fi3 {
+    padding: 130px;
+    margin: 10px;
+    background-color: blue;
+}
+
+.fi4 {
+    padding: 130px;
+    margin: 10px;
+    background-color: blue;
+}
+
+.fi5 {
+    padding: 130px;
+    margin: 10px;
+    background-color: blue;
+}
+
+.fi6 {
+    padding: 130px;
+    margin: 10px;
+    background-color: blue;
+}
+
+.road1 {
+    background-color: gray;
+    height: 50px;
+    position: absolute;
+    right: 0vh;
+    bottom: 10px;
+    transition: right 15s;
+    transition-timing-function: linear;
+}
+
+@keyframes r2 {
+    from {text-indent: -1800px}
+    to {text-indent: 1800px}
+}
+
+.road2 {
+    overflow: hidden;
+    background-color: gray;
+    animation-name: r2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.road1:hover {
+    right: 200vh;
+}
